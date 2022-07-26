@@ -1,0 +1,20 @@
+<html>
+    <div id="app">
+        <a :href="url">Damian</a>
+        <h1 :data="dynamicId">{{ dynamicId }}</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script>
+        
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                dynamicId: 21,
+                url: 'https://damianteske.nl',
+
+            }
+        })
+
+    </script>
+</html>

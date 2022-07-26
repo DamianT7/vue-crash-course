@@ -1,0 +1,28 @@
+<html>
+
+<style>
+    .active{
+        color: green;
+    }
+    .not-active{
+        color: red;
+    }
+</style>
+
+    <div id="app">
+        <h1 :class="isActive ? 'active' : 'not-active'">{{ name }}</h1>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+
+                isActive: false,
+                name: 'Damian'
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <div id="app">
+        <a :href="url">Damian</a>
+
+
+
+        <h1 v-on:click="number++">Plus</h1>
+        <h1 v-on:click="number--">min</h1>
+        <p>{{number}}</p>
+
+<form action="" @submit.prevent="number++">
+    <button type="submit">Submit</button>
+</form>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                number: 0,
+                url: 'https://damianteske.nl',
+                message: 'hello'
+            }
+        })
+    </script>
+</html>
