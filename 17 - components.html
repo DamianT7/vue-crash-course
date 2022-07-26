@@ -1,0 +1,24 @@
+<html>
+    <div id="app">
+        <posts></posts>
+        <posts></posts>
+        <posts></posts>
+        <posts></posts>
+        <posts></posts>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script>
+
+        Vue.component('posts', {
+            template: `<h1>Hellooo</h1>`
+        });
+
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'hello'
+            }
+        })
+    </script>
+</html>

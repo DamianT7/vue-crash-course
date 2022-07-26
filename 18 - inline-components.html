@@ -1,0 +1,31 @@
+<html>
+    <div id="app">
+        <posts inline-template>
+            <h1 @click="display">TOOTOTOTOYOYOYOY</h1>
+        </posts>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script>
+
+        Vue.component('posts', {
+            data(){
+                return{
+
+                }
+            },
+            methods: {
+                display(){
+                    alert();
+                }
+            }
+        });
+
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'hello'
+            }
+        })
+    </script>
+</html>
